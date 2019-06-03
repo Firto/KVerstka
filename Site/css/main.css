@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+}
+
+body{
+    background-color: white;
+}
+
+.container > header > nav {
+    border: 2px 0px 2px 0px solid #b9bd9a;
+}
+
+.container > header > nav > ul li a[href] {
+
+}
