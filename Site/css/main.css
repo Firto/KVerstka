@@ -1,17 +1,62 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    border-width: 0px;
+@font-face{
+    font-family: 'CitricaCyrillic';
+    src: url('../fonts/CitricaCyrillic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+* {
+    font-family: CitricaCyrillic;
+   
+}
 body{
     background-color: white;
+    border-width: 0px;
+    border-style: solid;
 }
 
-.container > header > nav {
-    border: 2px 0px 2px 0px solid #b9bd9a;
+.container > header > nav ul {
+    border-width: 2px 0px 2px 0px;
+    border-style: solid;
+    border-color:  #ced1b7;
+    padding: 0px;
 }
 
-.container > header > nav > ul li a[href] {
-
+.container > header > nav > img{
+    height: 150px;
+    object-fit: contain;
 }
+
+.container > header > nav ul{
+    margin: auto 0;
+    list-style-position: inside;
+}
+
+.container > header > nav ul:first-of-type {
+    direction: rtl;
+}
+
+.container > header > nav ul li {
+    float: left;
+    border-color: transparent;
+    padding: 10px 0px 10px 0px;
+    font-size: 30px;
+    color: #ced1b7;
+}
+
+.container > header > nav ul li > a{
+    color: #313131;
+}
+
+.container > header > nav ul:first-of-type li{
+    text-align: right;
+    /*padding-right: 30px;*/
+}
+
+/*.container > header > nav ul:last-of-type li > a{
+    padding-left: 30px; 
+}
+
+.container > header > nav ul:first-of-type li > a{
+    padding-right: 30px; 
+}*/
