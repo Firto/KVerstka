@@ -38,7 +38,9 @@ hr{
     padding: 0px;
 }
 
-.container > header > nav > div > img, .container > section:first-of-type > header > div > img{
+.container > header > nav > div > img, 
+.container > section:first-of-type > header > div > img,
+.container > section:first-of-type > section:first-of-type > ul > li > div > div > div > img{
     max-width: 100%;
     height: auto;
 }
@@ -156,4 +158,22 @@ hr{
     color: #735230;
 }
 
-/*2*/
+/*2 */
+
+.portrait-crop {
+    width: 200px;
+    height: 215px;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2){
+    color: #9bbcab;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div {
+    padding: 30px;
+    background-color: #e9f5ef;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div > div{
+    margin: 0 auto;
+}
