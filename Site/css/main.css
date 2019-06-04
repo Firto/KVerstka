@@ -15,16 +15,32 @@ body{
     border-style: solid;
 }
 
+/*Header*/
+
+.container > header{
+    margin-top: 20px;
+}
+
+hr{
+    height: 0px;
+    border-top-width: 1px;
+    border-color:  #ced1b7;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 41px;
+    margin-bottom: 0px;
+}
+
 .container > header > nav ul {
-    border-width: 2px 0px 2px 0px;
+    border-width: 1px 0px 1px 0px;
     border-style: solid;
     border-color:  #ced1b7;
     padding: 0px;
 }
 
-.container > header > nav > img{
-    height: 150px;
-    object-fit: contain;
+.container > header > nav > div > img, .container > section:first-of-type > header > div > img{
+    max-width: 100%;
+    height: auto;
 }
 
 .container > header > nav ul{
@@ -42,10 +58,12 @@ body{
     padding: 10px 0px 10px 0px;
     font-size: 30px;
     color: #ced1b7;
+    white-space: nowrap;
 }
 
 .container > header > nav ul li > a{
     color: #313131;
+    font-size: 30pt;
 }
 
 .container > header > nav ul:first-of-type li{
@@ -60,3 +78,82 @@ body{
 .container > header > nav ul:first-of-type li > a{
     padding-right: 30px; 
 }*/
+
+/*Content*/
+
+.container > section:first-of-type > header{
+    margin-top: 35px;
+}
+
+.container > section:first-of-type > header > div {
+    position: relative;
+}
+
+.container > section:first-of-type > header > div > p{
+    position: absolute;
+    color: white;
+    top: 0;
+    background-color: rgba(92, 75, 66, 78%);
+    text-align: center;
+    padding: 20px 30px 30px 30px;
+    font-size: 72pt;
+    line-height: 0.6;
+    
+}
+
+.container > section:first-of-type > header > div > p > span{
+    font-size: 36pt;
+    line-height: 0.3;
+}
+
+/**/
+
+.container > section:first-of-type > section:first-of-type{
+    margin-top: 50px;
+}
+
+.container > section:first-of-type > section:first-of-type > ul{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li{
+    font-size: 30pt;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li > h3{
+    font-size: 48pt;
+}
+
+
+
+.container > section:first-of-type > section:first-of-type > ul > li:first-of-type{
+    color: #927960;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > h3{
+    color: #735230;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > p{
+    font-size: 30pt;
+    line-height: 1;
+    color: #313131;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > a{
+    float: right;
+    font-size: 24pt;
+    color: black;
+    text-decoration: underline;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:first-of-type{
+    color: #927960;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > h3{
+    color: #735230;
+}
+
+/*2*/
