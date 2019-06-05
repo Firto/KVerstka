@@ -12,17 +12,24 @@
     font-style: normal;
 }
 
-@font-face{
-    font-family: 'Arial';
-    src: url('../fonts/Arial.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     font-family: CitricaCyrillic, sans-serif;
    
 }
+
+iframe{
+    border:none;
+}
+
+.container, .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding: 0px;
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 body{
     background-color: white;
     border-width: 0px;
@@ -30,6 +37,32 @@ body{
 }
 
 /*Header*/
+
+.container{
+    position: relative;
+}
+
+.container > div {
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    transition: 1s;
+}
+
+.container > div:hover{
+    bottom: 20px;
+}
+
+.container > div *{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #858585;
+    font-size: 18pt;
+}
+
+.container > div > img{
+    display: block;
+    margin: 0 auto;
+}
 
 .container > header{
     margin-top: 20px;
@@ -39,8 +72,6 @@ hr.clory{
     height: 0px;
     border-top-width: 1px;
     border-color:  #bbbe9a;
-    margin-left: -15px;
-    margin-right: -15px;
     margin-top: 41px;
     margin-bottom: 0px;
 }
@@ -55,6 +86,18 @@ hr.clory{
 .auto-res-img{
     width: 100%;
     height: auto;
+}
+.auto-pom-img{
+    width: auto;
+    height: 100%;
+    margin-right: 7px;
+    margin-left: 3px;
+}
+
+.mis{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 .container > header > nav ul{
@@ -103,7 +146,7 @@ hr.clory{
     position: relative;
 }
 
-.container > section:first-of-type > header > div > p{
+.container > section:first-of-type > header > div > h3{
     position: absolute;
     color: white;
     top: 0;
@@ -115,7 +158,7 @@ hr.clory{
     
 }
 
-.container > section:first-of-type > header > div > p > span{
+.container > section:first-of-type > header > div > h3 > span{
     font-size: 36pt;
     line-height: 0.3;
 }
@@ -125,26 +168,19 @@ hr.clory{
 .container > section:first-of-type > section:first-of-type{
     margin-top: 50px;
 }
-.container > section:first-of-type > section:first-of-type > ul{
-    margin-left: -15px;
-    margin-right: -15px;
-}
 
 .container > section:first-of-type > section:first-of-type > ul > li{
     font-size: 30pt;
     margin-top: 25px;
 }
 
-.container > section:first-of-type > section:first-of-type > ul > li > h3{
-    font-size: 48pt;
-    
-}
-
-.container > section:first-of-type > section:first-of-type > ul > li > div {
+.container > section:first-of-type > section:first-of-type > ul > li > div{
     margin-left: -40px;
 }
 
-
+.container > section:first-of-type > section:first-of-type > ul > li > h3{
+    font-size: 48pt;
+}
 
 .container > section:first-of-type > section:first-of-type > ul > li:first-of-type{
     color: #927960;
@@ -158,17 +194,18 @@ hr.clory{
     font-size: 30pt;
     line-height: 1;
     color: #313131;
+    margin-left: 10px;
 }
 
-.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > div > p:last-of-type{
+.sche{
     text-align: right;
-    
 }
 
-.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > div > p:last-of-type > a{
+.sche > a{
     font-size: 24pt;
     color: black;
     text-decoration: underline;
+    margin-right: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -179,6 +216,11 @@ hr.clory{
 }
 
 
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div{
+    display: flex;
+    flex-flow: column;
+}
+
 .container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > h4{
     color: #313131;
     font-size: 46pt;
@@ -188,6 +230,8 @@ hr.clory{
 .container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div {
     padding: 30px;
     background-color: #e9f5ef;
+    flex: 1 1 auto;
+    position: relative;
 }
 
 .container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div > p{
@@ -200,12 +244,17 @@ hr.clory{
     color: #707070;
     font-style: italic;
     font-family: 'Trebuchet-MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 25px;
 }
 
 .container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div > p:last-of-type > a{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 14pt;
+    position: absolute; 
+    bottom: 20px;
+    width: 100%;
+    left:0;
 }
 
 /*3 */
@@ -251,6 +300,7 @@ hr.clory{
 .container > section:first-of-type > section:first-of-type > ul > li:last-of-type > div > div > ul{
     list-style-type: none;
     padding: 0px;
+    margin-left: 10px;
 }
 
 .container > section:first-of-type > section:first-of-type > ul > li:last-of-type > div > div > ul > li > h6,
@@ -270,9 +320,65 @@ hr.clory{
     height: 500px;
 }
 
-@media (min-width: 990px){
+.container footer *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container > footer > div{
+    padding: 30px;
+}
+
+.container > footer > div > h5 {
+    
+    font-size: 24pt;
+    text-transform: uppercase;
+    color: #383838;
+    
+}
+
+.container > footer > div ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.container > footer > div ul,
+.container > footer > div > p{
+   
+    
+    color: #888888;
+    font-size: 18pt;
+}
+
+.container > footer > div ul > li{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #7d7d7d;
+    
+}
+
+.container > footer > div  ul > li > a {
+    color: #9c9c9c;
+}
+
+@media (min-width: 768px){
     #map {
         width: 100%;
         height: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .container > header > nav ul:first-of-type {
+        direction: ltr;
+    }
+
+    .container > header > nav > ul > li:first-of-type,
+    .container > header > nav > ul > li:last-of-type{
+        text-align: center;
+        /*padding-right: 30px;*/
+    }
+
+    .container > div{
+        bottom: 120px;
     }
 }
