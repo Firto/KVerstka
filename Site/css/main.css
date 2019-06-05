@@ -1,12 +1,26 @@
 @font-face{
+    font-family: 'Trebuchet-MS';
+    src: url('../fonts/Trebuchet-MS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
     font-family: 'CitricaCyrillic';
     src: url('../fonts/CitricaCyrillic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face{
+    font-family: 'Arial';
+    src: url('../fonts/Arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family: CitricaCyrillic;
+    font-family: CitricaCyrillic, sans-serif;
    
 }
 body{
@@ -40,7 +54,8 @@ hr{
 
 .container > header > nav > div > img, 
 .container > section:first-of-type > header > div > img,
-.container > section:first-of-type > section:first-of-type > ul > li > div > div > div > img{
+.container > section:first-of-type > section:first-of-type > ul > li > div > div > div > img,
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div > div > img{
     max-width: 100%;
     height: auto;
 }
@@ -143,8 +158,12 @@ hr{
     color: #313131;
 }
 
-.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > a{
-    float: right;
+.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > p:last-of-type{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > p:last-of-type > a{
     font-size: 24pt;
     color: black;
     text-decoration: underline;
@@ -160,13 +179,15 @@ hr{
 
 /*2 */
 
-.portrait-crop {
-    width: 200px;
-    height: 215px;
-}
-
 .container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2){
     color: #9bbcab;
+}
+
+
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > h4{
+    color: #313131;
+    font-size: 46pt;
+    text-align: center;
 }
 
 .container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div {
@@ -175,5 +196,26 @@ hr{
 }
 
 .container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div > div{
-    margin: 0 auto;
+    height: 220px;
+    overflow: hidden;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div > div > img{
+    margin: auto 0;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div > p{
+    text-align: center;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div > p:first-of-type{
+    font-size: 16pt;
+    color: #707070;
+    font-family: 'Trebuchet-MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > div > p:last-of-type > a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14pt;
 }
