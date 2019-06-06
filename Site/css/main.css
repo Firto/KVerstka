@@ -183,7 +183,7 @@ hr.clory{
     margin-left: -40px;
 }
 
-.container > section:first-of-type > section:first-of-type > ul > li > h3{
+.container > section:first-of-type > section:first-of-type > ul > li > h4{
     font-size: 48pt;
 }
 
@@ -191,7 +191,7 @@ hr.clory{
     color: #927960;
 }
 
-.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > h3{
+.container > section:first-of-type > section:first-of-type > ul > li:first-of-type > h4{
     color: #735230;
 }
 
@@ -225,7 +225,7 @@ hr.clory{
     flex-flow: column;
 }
 
-.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > h4{
+.container > section:first-of-type > section:first-of-type > ul > li:nth-of-type(2) > div > div > h5{
     color: #313131;
     font-size: 46pt;
     text-align: center;
@@ -307,7 +307,7 @@ hr.clory{
     margin-left: 10px;
 }
 
-.container > section:first-of-type > section:first-of-type > ul > li:last-of-type > div > div > ul > li > h6,
+.container > section:first-of-type > section:first-of-type > ul > li:last-of-type > div > div > ul > li > h5,
 .container > section:first-of-type > section:first-of-type > ul > li:last-of-type > div > div > ul > li > p{
     font-size: 18pt;
     font-family: 'Trebuchet-MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -328,7 +328,7 @@ hr.clory{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container > footer > div > h5 {
+.container > footer > div > h2 {
     
     font-size: 24pt;
     text-transform: uppercase;
@@ -353,7 +353,7 @@ hr.clory{
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #7d7d7d;
-    
+    white-space: nowrap;
 }
 
 .container > footer > div  ul > li > a {
