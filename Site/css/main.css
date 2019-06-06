@@ -38,30 +38,35 @@ body{
 
 /*Header*/
 
-.container{
+.container > footer > div:last-of-type{
     position: relative;
 }
 
-.container > div {
+.container > footer > div:last-of-type > div {
     position: absolute;
-    bottom: 40px;
+    top: 200px;
     right: 0px;
     transition: 1s;
 }
 
-.container > div:hover{
-    bottom: 20px;
+.container > footer > div:last-of-type > div:hover{
+    top: 210px;
 }
 
-.container > div *{
+.container > footer > div:last-of-type > div *{
     font-family: Arial, Helvetica, sans-serif;
     color: #858585;
     font-size: 18pt;
 }
 
-.container > div > img{
+.container > footer > div:last-of-type > div > img{
     display: block;
-    margin: 0 auto;
+    margin: auto auto;
+}
+
+.container > footer > div:last-of-type > div > a{
+    display: block;
+    margin-top: -40px;
 }
 
 .container > header{
@@ -204,7 +209,6 @@ hr.clory{
 .sche > a{
     font-size: 24pt;
     color: black;
-    text-decoration: underline;
     margin-right: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -324,10 +328,6 @@ hr.clory{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container > footer > div{
-    padding: 30px;
-}
-
 .container > footer > div > h5 {
     
     font-size: 24pt;
@@ -377,8 +377,14 @@ hr.clory{
         text-align: center;
         /*padding-right: 30px;*/
     }
+}
 
-    .container > div{
-        bottom: 120px;
+@media (max-width: 991px){
+    .container > footer > div:last-of-type > div {
+        top: 10px;
+    }
+    
+    .container > footer > div:last-of-type > div:hover{
+        top: 20px;
     }
 }
